@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>Pasafotos</title>
+</head>
+<body>
+    <div class="container">
+    <section class="banner">
+        <hr>
+        <h1>Pulsa el botón, si quieres.</h1>
+        <hr>
+        <button type="button" class="boton">Magiaaa</button>
+    </section>
+
+    <section class="slideshow-wrapper">
+        <div class="pasafotos">
+            <div class="diapo">
+                <div class="content">
+                    <h3>El buda de tailandia</h3>
+                    <p>Representa al Buda Gautama, el buda histórico, durante su última enfermedad, a punto de entrar en el paranirvāṇa. Está tumbado sobre su flanco derecho, con la cabeza apoyada sobre un cojín, o descansando sobre el codo derecho, soportando la cabeza con la mano.</p>
+                    <button type="button" class="boton">Leer más <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="diapo">
+                <div class="content">
+                    <h3>El castillo Suzaku</h3>
+                    <p>Este escenario tiene una plataforma grande a la derecha y dos más pequeñas a la izquierda. Según tu estilo de pelea, puede que prefieras combatir en un lado u otro. El escenario viene acompañado de temas musicales para 16 personajes. Cuando el tiempo esté a punto de agotarse o te quede una sola vida, ¡es posible que la música se vuelva más intensa!</p>
+                    <button type="button" class="boton">Leer más <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="diapo">
+                <div class="content">
+                    <h3>Mesón de las flores</h3>
+                    <p>El sabor tiene nombre, y es Mesón de las Flores. Disfruta de una tradicional comida catalana mientras nuestros especialistas se baten en combate en la jaula central del recinto. Si la sangre le salpica, se lleva el postre gratis.</p>
+                    <button type="button" class="boton">Leer más <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="diapo">
+                <div class="content">
+                    <h3>Sala de los 3 reyes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, ducimus atque libero obcaecati omnis fugit sit nulla, ipsum deleniti, sapiente aspernatur quo vero et voluptas reiciendis placeat? At, ipsum placeat!</p>
+                    <button type="button" class="boton">Leer más <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    </div>
+
+    <script>
+    document.querySelector('.banner button').addEventListener('click', () => {
+    document.querySelector('.banner').style.display = 'none';
+    document.querySelector('.slideshow-wrapper').style.cssText = 'opacity: 1; visibility: visible';
+    document.querySelector('.pasafotos').style.animation = 'slideshow 24s infinite';
+})
+    </script>
+</body>
+</html>
